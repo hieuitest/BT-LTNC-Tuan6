@@ -1,0 +1,47 @@
+1.
+
+#include<iostream>
+
+using namespace std;
+
+void show(int a[])
+{
+	cout << a << " ";
+	cout << &a[0] << " ";
+}
+
+int main()
+{
+	int a[10];
+	cout << a << " ";
+	cout << &a[0] << " ";
+	show(a);
+	return 0;
+}
+
+=> truyền tham chiếu
+
+2. chương trình không trả về kết quả (do không có điều kiện dừng hoặc biểu thức vô nghĩa vì N có thể bằng 0)
+3. nếu N khác 1 thì chương trình sẽ chạy mãi do không có điểm dừng
+4. số to quá thì chương trình không trả về kết quả
+5. 
+tính theo vong for:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+	int a = 0;
+	int b = 1;
+	int res;
+	for(int i = 2; i <= n; i++)
+	{
+		res = a + b;
+		a = b;
+		b = res;
+	}
+	cout << res;
+	return 0;
+}
