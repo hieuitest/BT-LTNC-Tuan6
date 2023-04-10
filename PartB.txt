@@ -1,0 +1,5 @@
+5. output của hàm là chuỗi dãy số đối xứng đầu cuối
+6. hàm sẽ chạy mãi mãi
+7. mystery(2, 25) = 50;
+   mystery(3, 11) = 33;
+thực chất hàm mystery là hàm thực hiện phép nhân
